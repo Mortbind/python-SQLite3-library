@@ -237,7 +237,7 @@ class SQLite3:
             print("录入成功！")
 
     #用来显示数据表现在的状态
-    def Snow_info(self,table):
+    def Show_info(self,table):
         row = self.cur.execute(f"SELECT * FROM {table};")
         for r in row:
             print(r)
